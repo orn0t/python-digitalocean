@@ -84,7 +84,7 @@ class DatabaseCreate(BaseAPI):
             data = self.get_data("databases/{}/users".format(self.id), type='POST', params=params)
 
         if data:
-            return data['users']
+            return data['user']
         else:
             return 'Error creating users'
 
